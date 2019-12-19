@@ -7,6 +7,9 @@ import pprint
 import copy
 import io
 
+# se kalenteritiedosto jota käsitellään
+FILENAME = "basic.ics"
+
 {   'VCALENDAR': {   'CALSCALE': 'GREGORIAN',
                      'METHOD': 'PUBLISH',
                      'PRODID': '-//Google Inc//Google Calendar 70.9054//EN',
@@ -50,7 +53,6 @@ import io
 
 START = "DTSTART"
 END = "DTEND"
-FILENAME = "basic (4).ics"
 
 def getDay(datestr):
     if type(datestr) is type(date.today()):
